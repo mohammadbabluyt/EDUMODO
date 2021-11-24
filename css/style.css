@@ -1,0 +1,1090 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/*==== Default css ====*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container-full{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.container-full:before,
+.container-full:after,
+.container:before,
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-25{
+	width: 25%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-30{
+	width: 30%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-33{
+	width: 33.33%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-50{
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-70{
+	width: 70%;
+	float: left;
+	padding: 0 15px;
+}
+
+.col-100{
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+}
+
+.section-padding{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/*==== site css ====*/
+
+/*==== 01. HEADER CSS ====*/
+
+header{
+	padding: 15px 0;
+}
+
+.main-menu{
+	list-style: none;
+	float: right;
+	padding: 10px 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.main-menu li{
+	display: inline-block;
+}
+
+.main-menu li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 16px;
+	color: #808080;
+	margin: 0 0 0 20px;
+	transition: 1s;
+}
+
+.main-menu li a:hover{
+	color: #fe5421;
+}
+
+.main-menu li a:hover i{
+	transition: .7s;
+}
+
+.main-menu li a:hover i{
+	transform: rotate(180deg);
+	color: #fe5421;
+}
+
+/*==== 02. HOME CSS ====*/
+
+
+.home{
+	background-image: url("../img/home/01.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	padding: 150px 0;
+}
+
+.home:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(120deg, #03132d,#ffffff00 100%);
+	left: 0;
+	top: 0;
+	opacity: 0.85;
+	z-index: -1;
+}
+
+.home h6{
+	font-size: 17px;
+	color: #ff512d;
+	font-weight: 400;
+	letter-spacing: 4px;
+	
+}
+
+.home h1{
+	font-size: 70px;
+	color: #fff;
+	line-height: 77px;
+	padding: 20px 0;
+}
+
+.home p{
+	font-size: 18px;
+	line-height: 28.8px;
+	color: #fff;
+	padding-bottom: 35px;
+}
+
+.btn{
+	background: #ff552b;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 40px;
+	display: inline-block;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	transition: .4s;
+	font-weight: bold;
+}
+
+.btn:hover{
+	background: #ec3914;
+}
+
+/*==== 03. Catagory CSS ====*/
+
+.catagory{
+	background: #ff5421;
+	color: #fff;
+	padding: 80px 0;
+}
+
+.catagory-box{
+	display: flex;
+}
+
+.ctg-icon i{
+	background: #fff;
+	color: #ff5421;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	line-height: 70px;
+	border-radius: 50%;
+	font-size: 28px;
+}
+
+.ctg-details{
+	padding-left: 20px;
+}
+
+.ctg-details h6{
+	font-size: 24px;
+	text-transform: capitalize;
+}
+
+.ctg-details p{
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*==== 04. About CSS ====*/
+
+.about-left span{
+	color: #ff5421;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.about-left h2{
+	text-transform: capitalize;
+	font-size: 44px;
+	color: #132643;
+	font-weight: 400px;
+	line-height: 52.8px;
+	padding: 20px 0 30px 0;
+}
+
+.about p{
+	color: #61686e;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*==== 05. PROGRAMS CSS ====*/
+
+.programs{
+	background: #dfdee3;
+}
+
+.section-title{
+	text-align: center;
+}
+
+.section-title span{
+	font-size: 16px;
+	color: #F8653F;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.section-title h2{
+	font-size: 44px;
+	color: #132643;
+	text-transform: capitalize;
+	padding: 10px 0 50px 0;
+}
+
+.section-item-box{
+	background: #fff;
+}
+
+.item-img img{
+	width: 100%;
+	height: 230px;
+}
+
+.section-item-content{
+	padding: 30px;
+}
+
+.section-item-content h3 a{
+	font-size: 24px;
+	color: #132643;
+	text-transform: capitalize;
+	text-decoration: none;
+	margin-bottom: 15px;
+	display: inline-block;
+	transition: .3s;
+}
+
+.section-item-content h3 a:hover{
+	color: #FF552B;
+}
+
+.section-item-content p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #61686E;
+	padding-bottom: 20px;
+}
+
+.section-item-btn{
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #FF5421;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*==== 06. COURSES CSS ====*/
+
+.courses .section-item-box{
+	background: #DFDEE3;
+	margin-bottom: 20px;
+}
+
+.free{
+	background: #FF552B;
+	text-transform: capitalize;
+	font-size: 12px;
+	color: #fff;
+	padding: 3px 6px;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.ratings{
+	margin: 10px 0 20px 0;
+	font-size: 14px;
+}
+
+/*==== 07. COUNTER CSS ====*/
+
+.counter{
+	background: url("../img/counter.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 80px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.counter:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #FF552B;
+	z-index: -1;
+	opacity: .9;
+}
+
+.counter-box{
+	color: #fff;
+	text-align: center;
+}
+
+.counter-box h2{
+	font-size: 44px;
+	color: #fff;
+}
+
+/*==== 08. TESTIMONIAL CSS ====*/
+
+
+
+.section-title h1{
+	font-size: 44px;
+	padding-top: 5px;
+}
+
+.test-single{
+	background: #E4E4E4;
+	padding: 20px;
+}
+
+.test-single i{
+	font-size: 20px;
+	color: #e3dedc;
+}
+
+.test-single p{
+	color: #61686e;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 15px 0;
+}
+
+.test-footer{
+	display: flex;
+	border-top: 1px solid gray;
+	padding: 30px 0;
+	position: relative;
+}
+
+.test-footer:before{
+	content: "\f0dd";
+	position: absolute;
+	top: -14px;
+	left: 30px;
+	font-size: 20px;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: gray;
+}
+
+.test-footer img{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.test-footer h6{
+	font-size: 16px;
+	color: #132643;
+	padding-bottom: 5px;
+}
+
+.test-footer span{
+	font-size: 14px;
+	color: #132643;
+}
+
+.test-author{
+	padding: 10px 10px 0 15px;
+}
+
+/*==== 09. EVENTS CSS ====*/
+
+.clander i{
+	color: #FF552B;
+	font-size: 14px;
+	padding: 25px 10px;
+}
+
+.clander span{
+	color: #787F84;
+	font-size: 14px;
+}
+
+/*==== 09. video CSS ====*/
+
+.video{
+	background: url("../img/home/01.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+	color:#fff;
+	padding: 110px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.video:before{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: #03133d;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	opacity: .7;
+}
+
+.video h6{
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.video h3{
+	color: #fff;
+	font-size: 48px;
+	text-transform: capitalize;
+	padding: 20px 0 30px 0;
+}
+
+.video i{
+	width: 100px;
+	height: 100px;
+	font-size: 25px;
+	color: #fff;
+	background: #FF552B;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 100px;
+	cursor: pointer;
+}
+
+/*==== 10.choose CSS ====*/
+
+.choose-left img{
+	height: 100%;
+	width: 100%;
+	
+}
+
+.choose-right{
+	padding-left: 20px;
+	padding-top: 50px;
+}
+
+.choose-right h2{
+	font-size: 44px;
+	color: #132643;
+	padding-bottom: 60px;
+}
+
+.choose-list{
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.choose-list-left{
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	color: #fff;
+	font-size: 30px;
+	background: #FF552B;
+	margin-right: 20px;
+}
+
+.choose-list-right h3{
+	font-size: 24px;
+	color: #132643;
+	padding-bottom: 10px;
+}
+
+.choose-list-right p{
+	font-size: 15px;
+	color: #61686e;
+	line-height: 24px;
+}
+
+/*==== 11.teacher CSS ====*/
+
+.teacher-single{
+	text-align: center;
+	transition: 5s;
+}
+
+.teacher-01{
+	background: url("../img/teacher/01.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+}
+
+.teacher-01:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: 1s;
+}
+
+.teacher-01:hover:before{
+	visibility: visible;
+	background: #ec3914;
+	opacity: .8;
+}
+
+.teacher-02{
+	background: url("../img/teacher/02.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+}
+
+.teacher-02:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: 1s;
+}
+
+.teacher-02:hover:before{
+	visibility: visible;
+	background: #ec3914;
+	opacity: .8;
+}
+
+.teacher-03{
+	background: url("../img/teacher/03.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+}
+
+.teacher-03:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: 1s;
+}
+
+.teacher-03:hover:before{
+	visibility: visible;
+	background: #ec3914;
+	opacity: .8;
+}
+
+.teacher-04{
+	background: url("../img/teacher/04.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+}
+
+.teacher-04:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: 1s;
+}
+
+.teacher-04:hover:before{
+	visibility: visible;
+	background: #ec3914;
+	opacity: .8;
+}
+
+
+.teacher-photo li{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.teacher-photo i{
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	color: #F8653F;
+	line-height: 40px;
+	border-radius: 50%;
+	visibility: hidden;
+	transition: .3s;
+	margin-top: 100px;
+}
+
+.teacher-photo:hover i{
+	background: #fff;
+	color: #F8653F;
+	visibility: visible;
+}
+
+.teacher-photo i:hover{
+	background: #03132d;
+	color: #fff;
+	transition: .3s;
+}
+
+.teacher-single h3{
+	font-size: 20px;
+	color: #132643;
+	padding: 20px 0 15px 0;
+	cursor: pointer;
+}
+
+.teacher-single span{
+	font-size: 15px;
+	color: #61686E;
+}
+
+/*==== 12.blog CSS ====*/
+
+.blog-box:hover img{
+	transform: scale(1.1);
+}
+
+.item-img{
+	overflow: hidden;
+}
+
+.item-img img{
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+}
+
+
+.section-item-content h3 a{
+	font-size: 20px;
+}
+
+.section-item-content i{
+	color: #252525;
+}
+
+.blog-item-btn a{
+	font-size: 14px;
+	color: #FF5421;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.blog-item-btn a i{
+	margin-left: 3px;
+	transition: .3s;
+	color: #fe5421;
+}
+
+.blog-item-btn a:hover i{
+	margin-left: 6px;
+}
+
+/*==== 10. footer css ====*/
+
+.footer{
+	background: #252525;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.footer-single a{
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	transition: .3s;
+}
+
+.footer-single a:hover{
+	color: #F4512C;
+}
+
+.footer-single p{
+	padding-bottom: 30px;
+}
+
+.footer-about p{
+	line-height: 24px;
+}
+
+.footer-single h4{
+	font-size: 20px;
+	text-transform: capitalize;
+	padding-bottom: 20px;
+}
+
+.footer-about li{
+	margin-top: 5px;
+}
+
+.footer-about i{
+	padding-right: 10px;
+}
+
+.footer-quick li a i{
+	margin-bottom: 12px;
+}
+
+.footer-quick h4{
+	margin-top: 10px;
+}
+
+.footer-Instagram a{
+	margin-top: 5px;
+}
+
+.footer-copyright{
+	background: #1D1D1D;
+	margin-top: 80px;
+	padding-top: 30px;
+	padding-bottom: 55px;
+}
+
+.footer.section-padding{
+	padding-bottom: 0;
+}
+
+/*.instagram{
+	width: 78px;
+	height: 78px;
+	padding: 3px;
+	display: inline-block;
+}
+
+.instagram img{
+	width: 100%;
+	height: 100%;
+	
+}*/
+
+.instagram{
+	display: inline-block;
+}
+
+.insta-img-box-01{
+	background: url("../img/Instagram/01.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-01:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px;
+}
+
+.insta-img-box-01:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.insta-img-box-02{
+	background: url("../img/Instagram/02.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-02:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px;
+}
+
+.insta-img-box-02:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.insta-img-box-03{
+	background: url("../img/Instagram/03.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-03:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px;
+}
+
+.insta-img-box-03:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.insta-img-box-04{
+	background: url("../img/Instagram/04.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-04:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px
+}
+
+.insta-img-box-04:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.insta-img-box-05{
+	background: url("../img/Instagram/05.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .3s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-05:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px;
+}
+
+.insta-img-box-05:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.insta-img-box-06{
+	background: url("../img/Instagram/06.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 70px;
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+	margin: 3px;
+}
+
+.insta-img-box-06:before{
+	content: "\f16d";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	visibility: hidden;
+	transition: .3s;
+	font-family: "Font Awesome 5 Brands";
+	text-align: right;
+	line-height: 100px;
+}
+
+.insta-img-box-06:hover:before{
+	visibility: visible;
+	background: #252525;
+	opacity: .5;
+}
+
+.copyright-left p{
+	font-size: 14px;
+	color: #E1E1E1;
+}
+
+.copyright-left p a{
+	color: #E1E1E1;
+	transition: .3s;
+}
+
+.copyright-left p a:hover{
+	color: #FF552B;
+}
+
+.copyright-right{
+	float: right;
+	font-size: 18px;
+	color: #B6B6B6;
+}
+
+.copyright-right span a{
+	color: #B6B6B6;
+}
+
+.copyright-right ul{
+	display: inline-block;
+	padding-left: 40px;
+}
+
+.copyright-right ul li{
+	display: inline-block;
+	padding-right: 12px;
+}
+
+.copyright-right ul li a{
+	color: #B6B6B6;
+	transition: .3s;
+}
+
+.copyright-right ul li a:hover{
+	color: #FF552B;
+}
+
+
